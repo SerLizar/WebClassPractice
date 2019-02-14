@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Account Registry</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<header>
+		<h1>
+			Registry Form
+		</h1>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About the site</a>
+			</li>
+			<li class="selected">
+				<a href="#">Registry</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			<li>
+				<a href="#">Copyright</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<form id="registryForm">
+			<fieldset>
+				<legend>
+					New account registry
+				</legend>
+				<span>Your information is safe with us</span>
+				<label for="completeNameInput">
+					<p>
+						Complete Name
+					</p>
+					<input type="text" name="name" id="completeNameInput" class="formElement">
+				</label>
+				<label for="emailInput">
+					<p>
+						Email
+					</p>
+					<input type="email" name="email" id="emailInput" class="formElement">
+				</label>
+				<label for="passwordInput">
+					<p>
+						Password:
+					</p>
+					<input type="password" name="password" id="passwordInput" class="formElement">
+					<p id="passwordNeedsNumber" class="formError">
+						The password needs at least 1 number!
+					</p>
+					<p id="passwordNeedsLetter" class="formError">
+						The password needs at least 1 letter!
+					</p>
+				</label>
+				<label for="passwordConfirmationInput">
+					<p>
+						Password confirmation:
+					</p>
+					<input type="password" name="password_confirmation" id="passwordConfirmationInput" class="formElement">
+					<p id="passwordNotMatch" class="formError">
+						The password and password confirmation need to match!
+					</p>
+				</label>
+				<label for="countryInput">
+					<p>
+						Country
+					</p>
+					<select id="country">
+						<option value="" selected disabled hidden>Select a country…</option>
+						<option value="mx">Mexico</option>
+						<option value="us">USA</option>
+						<option value="ca">Canada</option>
+					</select>
+					<p id="countryNotSelected" class="formError">
+						A country has to be selected!
+					</p>
+				</label>
+				<div>
+					<p>Gender</p>
+					<div>
+						<label for="maleRadioInput">
+							<input type="radio" name="gender" value="M" id="maleRadioInput">
+							Masculine
+						</label>
+					</div>
+					<div>
+						<label for="femaleRadioInput">
+							<input type="radio" name="gender" value="F" id="femaleRadioInput">
+							Feminine
+						</label>
+					<div>
+					<p id="genderNotSelected" class="formError">
+						A gender has to be selected!
+					</p>
+				</div>
+				<div>
+					<label for="cancelButton">
+						<input type="reset" name="cancel" value="Cancel" id="cancelButton" class="button">
+					</label>
+					<label for="submitButton">
+						<input type="submit" name="submit" value="Submit" id="submitButton" class="button">
+					</label>
+				</div>
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		Some footer
+	</footer>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
